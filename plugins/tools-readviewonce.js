@@ -2,7 +2,7 @@
 let { downloadContentFromMessage } = (await import('@adiwajshing/baileys'));
 
 let handler = async (m, { conn }) => {
-    if (!m.quoted) throw '✳️ Responde a un mensaje'
+    if (!m.quoted) throw '✳️:ارسل جملة لي وضع بجانبها المزيد مثال ازالك.... اامزيد'
     if (m.quoted.mtype !== 'viewOnceMessageV2') throw '✳️ Eso no es un mensaje de viewOnce'
     let msg = m.quoted.message
     let type = Object.keys(msg)[0]
@@ -20,6 +20,6 @@ let handler = async (m, { conn }) => {
 
 handler.help = ['readvo']
 handler.tags = ['tools']
-handler.command = ['readviewonce', 'read', 'ver', 'readvo'] 
+handler.command = ['مزيد', 'المزيد', 'ver', 'readvo'] 
 
 export default handler
