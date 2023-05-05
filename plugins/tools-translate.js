@@ -5,12 +5,12 @@ const tld = 'cn'
 
 let handler = async (m, { args, usedPrefix, command }) => {
     let err = `
-📌 *Ejemplo:*
+📌 *مثال:*
 
 *${usedPrefix + command}* <idioma> [texto]
-*${usedPrefix + command}* es Hello World
+*${usedPrefix + command}* مرحبا ايها العالم 
 
-≡ *Lista de idiomas admitidos:* 
+≡ *الغات الذي يمكن للبوت ترجمتها:* 
 
 https://cloud.google.com/translate/docs/languages
 `.trim()
@@ -33,6 +33,6 @@ https://cloud.google.com/translate/docs/languages
 }
 handler.help = ['trad <leng> <text>']
 handler.tags = ['tools']
-handler.command = ['translate', 'tl', 'trad', 'tr']
+handler.command = ['translate', 'tl', 'ترجمة', 'ترجمه']
 
 export default handler
