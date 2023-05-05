@@ -2,7 +2,7 @@ import { webp2mp4 } from '../lib/webp2mp4.js'
 import { ffmpeg } from '../lib/converter.js'
 
 let handler = async (m, { conn }) => {
-    if (!m.quoted) throw '✳️ Responde a un sticker animado'
+    if (!m.quoted) throw '  *『✨🐸قم برد علي ملصق فيديو لي تحويله لي فيديو』*'
     let mime = m.quoted.mimetype || ''
     if (!/webp|audio/.test(mime)) throw '✳️ Responde a un sticker animado'
     let media = await m.quoted.download()
@@ -22,6 +22,6 @@ let handler = async (m, { conn }) => {
 }
 handler.help = ['tovid']
 handler.tags = ['sticker']
-handler.command = ['tovideo', 'tovid']
+handler.command = ['tovideo', 'لفيديو']
 
 export default handler
