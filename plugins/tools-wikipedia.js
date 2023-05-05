@@ -3,7 +3,7 @@ import cheerio from 'cheerio'
 
 
 let handler = async (m, { text }) => {
-	if (!text) throw `✳️ Ingrese lo que quiere buscar en Wikipedia` 
+	if (!text) throw `✳️ أدخل ما تريد البحث عنه في ويكيبيديا` 
 	
     try {
 	const link =  await axios.get(`https://es.wikipedia.org/wiki/${text}`)
@@ -16,12 +16,12 @@ let handler = async (m, { text }) => {
 
 ${resulw}`)
 } catch (e) {
-  m.reply('⚠️ No se han encontrado resultados ')
+  m.reply('⚠️ غير معثور عليه ')
 }
 }
 handler.help = ['wikipedia']
 handler.tags = ['tools']
-handler.command = ['wiki','wikipedia'] 
+handler.command = ['ويكيبيديا','wikipedia'] 
 
 
 export default handler
