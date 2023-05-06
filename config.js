@@ -3,13 +3,13 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['59172945992', 'FG98', true],
-  ['5492622271736'], 
-  ['5492622271736'] 
+  ['8617029364091', 'ريوزاكي', BOT],
+  ['8617029364091'], 
+  ['201284329186'] 
 ] //Numeros de owner 
 
-global.mods = ['573125484672'] 
-global.prems = ['50489079501', '5219631769130', '573125484672']
+global.mods = ['8617029364091'] 
+global.prems = ['201284329186', '8617029364091', '8617029364091']
 global.APIs = { // API Prefix
   // name: 'https://website'
   xteam: 'https://api.xteam.xyz', 
@@ -25,14 +25,14 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'DyLux┃ᴮᴼᵀ' 
-global.author = '@fg98' 
-global.fgig = '▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff\n' 
-global.dygp = 'https://chat.whatsapp.com/IO9jmpI72ejHiN4unRZleU'
-global.fgsc = 'https://github.com/FG98F/dylux-fg' 
+global.packname = 'ريوزاكي┃ᴮᴼᵀ' 
+global.author = '@ال' 
+global.fgig = '▢ تابعني على تيك توم\nhttps://www.tiktok.com/@meleo.1' 
+global.dygp = 'https://chat.whatsapp.com/Eflx7D1eNPxEV3SEp8JMio'
+global.fgsc = 'https://chat.whatsapp.com/Eflx7D1eNPxEV3SEp8JMio' 
 global.fgyt = 'https://youtube.com/fg98f'
 global.fgpyp = 'https://paypal.me/fg98f'
-global.fglog = 'https://i.imgur.com/Owmb93c.png' 
+global.fglog = 'https://1.bp.blogspot.com/-clc71LlTZh8/XmpAJjYXs0I/AAAAAAAAIII/4J4Ma6BR9KcBqbz9RwNMZcrw12Mn71gnACLcBGAsYHQ/s1600/lelouch.png' 
 
 global.wait = '*⌛ _Cargando..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
