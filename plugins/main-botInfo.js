@@ -45,38 +45,30 @@ let infobt = `
 ≡ *INFO BOT*
   
 *ESTADO*
-▢ *${groupsIn.length}* Chats de grupo
+▢ *${groupsIn.length}* محادثات المجموعة
 ▢ *${groupsIn.length}* Gropos unidos
-▢ *${groupsIn.length - groupsIn.length}* Grupos abandonados
-▢ *${chats.length - groupsIn.length}* Chats privados
+▢ *${groupsIn.length - groupsIn.length}* مجموعات مهجورة
+▢ *${chats.length - groupsIn.length}* محادثات الخاص 
 ▢ *${chats.length}* Total Chats
 
-*≡ OWNER*
+*≡ المالك*
   *FG98*
-▢ Instagram :
+▢ انستقرام :
   • https://instagram.com/fg98_ff
 ▢ WhatsApp :
   • (escribe solo si es necesario) 
-▢ GitHub :
+▢ جيثب :
   • https://github.com/FG98F
-▢ Telegram : 
+▢ تيليجرام : 
   • t.me/fgsupp_bot (FG) 
   • t.me/fg98ff (canal)
   • t.me/fgawgp (grupo)
 ▢ YouTube : 
   • https://youtube.com/fg98f
   
- *≡ HELPERS*
-  *CRISS*
-▢ Instagram : https://www.instagram.com/sayurizuniga3
-▢ WhatsApp : wa.me/
-  *ANDREA*
-▢ Instagram : https://
-▢ WhatsApp : wa.me/573125484672
-
  *≡ S E R V E R*
-*🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
-*🔵 FreeRAM:* ${format(freemem())}
+*🛑 رام:* ${format(totalmem() - freemem())} / ${format(totalmem())}
+*🔵 رام مجانا:* ${format(freemem())}
 
 *≡  NodeJS Uso de memoria*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
@@ -89,6 +81,6 @@ conn.sendButton(m.chat, infobt, fgig, null, [
 }
 handler.help = ['info']
 handler.tags = ['main']
-handler.command = ['info', 'infobot', 'botinfo']
+handler.command = ['info', 'معلومات البوت', 'معلومات']
 
 export default handler
