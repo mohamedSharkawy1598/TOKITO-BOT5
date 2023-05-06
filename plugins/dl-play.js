@@ -12,18 +12,18 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 	let play = `
 	≡ *FG MUSIC*
 ┌──────────────
-▢ 📌 *Título* : ${title}
-▢ 📆 *Publicado:* ${ago}
-▢ ⌚ *Duración:* ${timestamp}
-▢ 👀 *Vistas:* ${views}
+▢ 📌 *العنوان* : ${title}
+▢ 📆 *التاريخ:* ${ago}
+▢ ⌚ *المشاهدات:* ${timestamp}
+▢ 👀 *الوقت:* ${views}
 └──────────────`
  await conn.sendButton(m.chat, play, fgig, thumbnail, [
-    ['🎶 MP3', `${usedPrefix}fgmp3 ${url}`],
-    ['🎥 MP4', `${usedPrefix}fgmp4 ${url}`]
+    ['🎶 صوت', `${usedPrefix}fgmp3 ${url}`],
+    ['🎥 فيديو', `${usedPrefix}fgmp4 ${url}`]
   ], m, rpl)
 }
 handler.help = ['play']
 handler.tags = ['dl']
-handler.command = ['play', 'playvid']
+handler.command = ['صوت', 'فيديو']
 
 export default handler
