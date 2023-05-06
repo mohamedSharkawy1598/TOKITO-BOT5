@@ -7,11 +7,11 @@ let handler = async (m, { conn }) => {
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         let txt = `
-┌───⊷ *NIVEL*
-▢ Nombre : *${name}*
-▢ Nivel : *${user.level}*
-▢ XP : *${user.exp - min}/${xp}*
-▢ Rango : *${user.role}*
+┌───⊷ *مستواك*
+▢ اسمك✨🐸 : *${name}*
+▢ مستواك🙀 : *${user.level}*
+▢ نقاط المستوي🙂✨ : *${user.exp - min}/${xp}*
+▢ رتبتك💂‍♂️ : *${user.role}*
 └──────────────
 
 Te falta *${max - user.exp}* de *XP* para subir de nivel
@@ -41,7 +41,7 @@ try {
 ┌─⊷ *LEVEL UP*
 ▢ Nivel anterior : *${before}*
 ▢ Nivel actual : *${user.level}*
-▢ Rango : *${user.role}*
+▢ رتبتك : *${user.role}*
 └──────────────
 
 *_Cuanto más interactúes con los bots, mayor será tu nivel_*
@@ -59,6 +59,6 @@ try {
 
 handler.help = ['levelup']
 handler.tags = ['econ']
-handler.command = ['nivel', 'lvl', 'levelup', 'level'] 
+handler.command = ['مستوي', 'lvl', 'levelup', 'level'] 
 
 export default handler
